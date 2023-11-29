@@ -16,3 +16,16 @@
     justify-content: center;
     align-items: center;
 }
+
+@mixin btn {
+    width: 120px;
+    height: 40px;
+    border: 1px solid $color2;
+    background-color: $color2;
+    border-radius: 20px;
+    font-family: $font-family3;
+    font-size: 15px;
+    color: $color4;
+    overflow: hidden;
+    transition: all .4s ease;
+}

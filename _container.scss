@@ -4,104 +4,157 @@
     box-sizing: border-box;
 }
 
-.template{
+nav{
     width: 100%;
-    background-color: $color1;
-    .container{
-        @include container;
-        .store{
-            @include flex;
-            .call{
-                display: flex;
-                gap: 15px;
-                p{
-                    font-family: $font-family3;
-                    font-size: 13px;
-                    color: $color2;
-                    a{
-                        color: $color2;
-                    }
-                }
-            }
-            .twitter{
-                display: flex;
-                a{
-                    width: 30px;
-                    height: 30px;
-                    @include center;
-                    transition: all .3s ease;
-                    i{
+    .template{
+        width: 100%;
+        background-color: $color1;
+        .container{
+            @include container;
+            .store{
+                @include flex;
+                .call{
+                    display: flex;
+                    gap: 15px;
+                    #p1{
+                        font-family: $font-family3;
                         font-size: 13px;
                         color: $color2;
                     }
-                    &:hover{
-                        border-radius: 70%;
-                        // background-color: rgba($color: #000000, $alpha: 0.12);
+                    #p2{
+                        font-family: $font-family3;
+                        font-size: 13px;
+                        color: $color2;
+                        a{
+                            color: $color2;
+                        }
                     }
                 }
-            }
-        }
-    }
-}
-
-nav{
-    width: 100%;
-    padding: 20px 0;
-    .container{
-        @include container;
-        .navbar{
-            @include flex;
-            .toystore{
-                display: flex;
-                align-items: center;
-                gap: 45px;
-                h3{
-                    font-family: $font-family4;
-                    font-size: 25px;
-                    color: $color4;
-                }
-                ul{
+                .twitter{
                     display: flex;
-                    gap: 30px;
-                    li{
-                        list-style-type: none;
-                        font-family: $font-family5;
-                        font-size: 14px;
-                        a{
-                            text-decoration: none;
-                            color: $color3;
+                    a{
+                        width: 32px;
+                        height: 32px;
+                        @include center;
+                        transition: all .3s ease;
+                        i{
+                            font-size: 14px;
+                            color: $color2;
+                        }
+                        &:hover{
+                            border-radius: 70%;
+                            // background-color: rgba($color: #000000, $alpha: 0.12);
                         }
                     }
                 }
             }
-            .cart{
-                display: flex;
-                align-items: center;
-                gap: 10px;
-                cursor: pointer;
-                p{
-                    font-family: $font-family1;
-                    font-size: 16px;
-                    color: $color3;
+        }
+    }
+    .nav{
+        width: 100%;
+        padding: 20px 0;
+        position: relative;
+        .container{
+            @include container;
+            .navbar{
+                @include flex;
+                .toystore{
+                    display: flex;
+                    align-items: center;
+                    gap: 45px;
+                    h3{
+                        font-family: $font-family4;
+                        font-size: 25px;
+                        color: $color4;
+                        cursor: pointer;
+                    }
+                    ul{
+                        display: flex;
+                        gap: 30px;
+                        li{
+                            list-style-type: none;
+                            font-family: $font-family5;
+                            font-size: 14px;
+                            a{
+                                text-decoration: none;
+                                color: $color3;
+                            }
+                            &:hover{
+                                border-bottom: 1px solid $color4;
+                            }
+                        }
+                    }
                 }
-                img{
-                    width: 30px;
-                }
-                .zero{
-                    width: 20px;
-                    height: 20px;
-                    @include center;
-                    border-radius: 50%;
-                    background-color: $color1;
-                    color: $color2;
-                    font-size: 14px;
+                .cart{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    .basket{
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                        cursor: pointer;
+                        p{
+                            font-family: $font-family1;
+                            font-size: 16px;
+                            color: $color3;
+                        }
+                        img{
+                            width: 30px;
+                        }
+                        .zero{
+                            width: 20px;
+                            height: 20px;
+                            @include center;
+                            border-radius: 50%;
+                            background-color: $color1;
+                            color: $color2;
+                            font-size: 14px;
+                        }
+                    }
+                    .nav_icon{
+                        margin-left: 5px;
+                        border-left: 1px solid $color5;
+                        i{
+                            padding:0 10px 0 20px;
+                            display: none;
+                            font-size: 22px;
+                        }
+                    }
                 }
             }
         }
+        // .list{
+        //     width: 100%;
+        //     display: none;
+        //     position: absolute;
+        //     top: 30px;
+        //     left: 0;
+        //     .container{
+        //         @include container;
+        //         ul{
+        //             display: flex;
+        //             justify-content: flex-start;
+        //             align-items: center;
+        //             flex-direction: column;
+        //             gap: 20px;
+        //             li{
+        //                 list-style-type: none;
+        //                 font-family: $font-family5;
+        //                 font-size: 14px;
+        //             }
+        //         }
+        //         hr{
+        //             width: 100%;
+        //             height: 2px;
+        //             background-color: $color5;
+        //         }
+        //     }
+        // }
     }
 }
 
-.section1{
+header{
     width: 100%;
     padding: 130px 0;
     background-image: url("https://assets.website-files.com/5badda2935e11303a89a461e/5baddd4835e113c6299a48f5_li-tzuni-507346-unsplash.jpg");
@@ -113,7 +166,7 @@ nav{
         .free{
             @include center;
             .hello{
-                width: 50%;
+                width: 550px;
                 padding: 55px 0;
                 background-color: $color2;
                 border-radius: 20px;
@@ -149,9 +202,9 @@ nav{
                     &:hover{
                         cursor: pointer;
                         scale: 1.05;
-                        box-shadow: 0px 0px 7px 1px rgba(115, 135, 137, 0.75);
-                        -webkit-box-shadow: 0px 0px 7px 1px rgba(115, 135, 137, 0.75);
-                        -moz-box-shadow: 0px 0px 7px 1px rgba(115, 135, 137, 0.75);
+                        box-shadow: 0px 0px 5px 1px rgba(115, 135, 137, 0.75);
+                        -webkit-box-shadow: 0px 0px 5px 1px rgba(115, 135, 137, 0.75);
+                        -moz-box-shadow: 0px 0px 5px 1px rgba(115, 135, 137, 0.75);
                     }
                 }
             }
@@ -164,8 +217,8 @@ nav{
         border-radius: 50%;
         background-color: $color2;
         position: absolute;
-        left: 50%;
-        bottom: -20px;
+        left: 48%;
+        bottom: -30px;
         @include center;
         cursor: pointer;
         i{
@@ -184,10 +237,10 @@ nav{
     display: none;
     justify-content: center;
     align-items: center;
-    background-color: rgba($color: #000000, $alpha: 0.8);
+    // background-color: rgba($color: #000000, $alpha: 0.8);
     .modal{
-        width: 30%;
-        height: 300px;
+        width: 480px;
+        height: 320px;
         background-color: white;
         border-radius: 20px;
         .cart{
@@ -195,7 +248,7 @@ nav{
             justify-content: space-around;
             gap: 200px;
             align-items: center;
-            height: 30%;
+            height: 28%;
             h3{
                 font-family: $font-family4;
                 font-size: 25px;
@@ -211,9 +264,457 @@ nav{
         }
         .item{
             @include center;
-            height: 70%;
+            height: 72%;
             font-family: $font-family1;
             font-size: 16px;
+        }
+    }
+}
+
+.section1{
+    width: 100%;
+    padding: 100px 0;
+    background-color: $color8;
+    .container{
+        @include container;
+        .shop{
+            @include flex;
+            .animals{
+                width: 48%;
+                padding: 30px 0;
+                @include center;
+                background-color: $color6;
+                border-radius: 15px;
+                gap: 35px;
+                .image{
+                    width: 200px;
+                    margin-top: -70px;
+                    img{
+                        width: 100%;
+                    }
+                }
+                .now{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 15px;
+                    h3{
+                        font-family: $font-family4;
+                        color: $color2;
+                        font-size: 25px;
+                    }
+                    button{
+                        @include btn;
+                        &:hover{
+                            scale: 1.05;
+                            cursor: pointer;
+                            box-shadow: 0px 0px 3px 0px rgba(87, 89, 90, 0.75);
+                            -webkit-box-shadow: 0px 0px 3px 0px rgba(87, 89, 90, 0.75);
+                            -moz-box-shadow: 0px 0px 3px 0px rgba(87, 89, 90, 0.75);
+                        }
+                    }
+                }
+            }
+            .wood{
+                width: 48%;
+                padding: 30px 0;
+                background-color: $color7;
+                border-radius: 15px;
+                @include center;
+                gap: 35px;
+                .now{
+                    display: flex;
+                    align-items: flex-end;
+                    flex-direction: column;
+                    gap: 20px;
+                    h3{
+                        font-family: $font-family4;
+                        color: $color2;
+                        font-size: 25px;
+                    }
+                    button{
+                        @include btn;
+                        &:hover{
+                            scale: 1.05;
+                            cursor: pointer;
+                            box-shadow: 0px 0px 5px 1px rgba(115, 135, 137, 0.75);
+                            -webkit-box-shadow: 0px 0px 5px 1px rgba(115, 135, 137, 0.75);
+                            -moz-box-shadow: 0px 0px 5px 1px rgba(115, 135, 137, 0.75);
+                        }
+                    }
+                }
+                .image{
+                    width: 200px;
+                    margin-top: -70px;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.section2{
+    width: 100%;
+    padding: 50px 0;
+    background-color: $color8;
+    .container{
+        @include container;
+        .stuff{
+            @include flex;
+            h2{
+                font-family: $font-family4;
+                font-size: 28px;
+                color: $color4;
+            }
+            a{
+                text-decoration: none;
+                font-family: $font-family3;
+                border-bottom: 2px solid $color9;
+                color: $color4;
+                font-weight: 500;
+                font-size: 16px;
+                transition: all .4s ease;
+                i{
+                    font-size: 18px;
+                }
+                &:hover{
+                    border-bottom: 2px solid $color1;
+                }
+            }
+        }
+        .hr{
+            width: 100%;
+            margin-top: 35px;
+            height: 1.5px;
+            background-color: $color9;
+            .color{
+                width: 15%;
+                height: 100%;
+                background-color: $color1;
+            }
+        }
+        .boxes{
+            @include flex;
+            margin-top: 70px;
+            .dog{
+                width: 23%;
+                background-color: $color2;
+                @include center;
+                flex-direction: column;
+                gap: 20px;
+                padding: 40px 0 30px 0;
+                border-radius: 15px;
+                box-shadow: 0px 0px 1px 0px rgba(128, 144, 143, 0.75);
+                -webkit-box-shadow: 0px 0px 1px 0px rgba(128, 144, 143, 0.75);
+                -moz-box-shadow: 0px 0px 1px 0px rgba(128, 144, 143, 0.75);
+                overflow: hidden;
+                transition: all .5s ease;
+                img{
+                    width: 60%;
+                }
+                p{
+                    font-family: $font-family3;
+                    color: $color3;
+                }
+                .usd{
+                    width: 100px;
+                    height: 25px;
+                    background-color: $color1;
+                    border-radius: 25px;
+                    font-family: $font-family5;
+                    font-size: 12px;
+                    color: $color2;
+                    @include center;
+                }
+                &:hover{
+                    scale: 1.1;
+                    cursor: pointer;
+                    box-shadow: 0px 0px 15px 0px rgba(123, 126, 126, 0.75);
+                    -webkit-box-shadow: 0px 0px 15px 0px rgba(123, 126, 126, 0.75);
+                    -moz-box-shadow: 0px 0px 15px 0px rgba(123, 126, 126, 0.75);
+                }
+            }
+        }
+    }
+}
+
+.section3{
+    width: 100%;
+    padding: 70px 0;
+    background-color: $color8;
+    .container{
+        @include container;
+        .wooden{
+            @include flex;
+            h2{
+                font-family: $font-family4;
+                font-size: 28px;
+                color: $color4;
+            }
+            a{
+                text-decoration: none;
+                font-family: $font-family3;
+                border-bottom: 2px solid $color9;
+                color: $color4;
+                font-weight: 500;
+                font-size: 16px;
+                transition: all .4s ease;
+                i{
+                    font-size: 18px;
+                }
+                &:hover{
+                    border-bottom: 2px solid $color1;
+                }
+            }
+        }
+        .hr{
+            width: 100%;
+            margin-top: 35px;
+            height: 1.5px;
+            background-color: $color9;
+            .color{
+                width: 15%;
+                height: 100%;
+                background-color: $color1;
+            }
+        }
+        .toys{
+            @include flex;
+            margin-top: 70px;
+            .dog{
+                width: 23%;
+                background-color: $color2;
+                @include center;
+                flex-direction: column;
+                gap: 20px;
+                padding: 40px 0 30px 0;
+                border-radius: 15px;
+                box-shadow: 0px 0px 1px 0px rgba(128, 144, 143, 0.75);
+                -webkit-box-shadow: 0px 0px 1px 0px rgba(128, 144, 143, 0.75);
+                -moz-box-shadow: 0px 0px 1px 0px rgba(128, 144, 143, 0.75);
+                overflow: hidden;
+                transition: all .4s ease;
+                img{
+                    width: 60%;
+                }
+                p{
+                    font-family: $font-family3;
+                    color: $color3;
+                }
+                .usd{
+                    width: 100px;
+                    height: 25px;
+                    background-color: $color1;
+                    border-radius: 25px;
+                    font-family: $font-family5;
+                    font-size: 12px;
+                    color: $color2;
+                    @include center;
+                }
+                &:hover{
+                    scale: 1.1;
+                    cursor: pointer;
+                    box-shadow: 0px 0px 15px 0px rgba(123, 126, 126, 0.75);
+                    -webkit-box-shadow: 0px 0px 15px 0px rgba(123, 126, 126, 0.75);
+                    -moz-box-shadow: 0px 0px 15px 0px rgba(123, 126, 126, 0.75);
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:990px) {
+    nav{
+        .template{
+            .container{
+                padding: 0 12px;
+            }
+        }
+        .nav{
+            .container{
+                padding: 0 12px;
+                .navbar{
+                    .toystore{
+                        ul{
+                            display: none;
+                        }
+                    }
+                    .cart{
+                        .nav_icon{
+                            i{
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    header{
+        .container{
+            .free{
+                .hello{
+                    width: 500px;
+                    padding: 45px 0;
+                    h1{
+                        font-size: 35px;
+                    }
+                }
+            }
+        }
+        .mouse{
+            display: none;
+        }
+    }
+    .section1{
+        .container{
+            .shop{
+                flex-direction: column;
+                gap: 70px;
+                .animals{
+                    width: 500px;
+                }
+                .wood{
+                    width: 500px;
+                }
+            }
+        }
+    }
+    .section2{
+        .container{
+            .boxes{
+                flex-wrap: wrap;
+                gap: 30px;
+                .dog{
+                    width: 46%;
+                }
+            }
+        }
+    }
+    .section3{
+        .container{
+            .toys{
+                flex-wrap: wrap;
+                gap: 30px;
+                .dog{
+                    width: 46%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    header{
+        .container{
+            .free{
+                .hello{
+                    width: 450px;
+                    padding: 40px 0;
+                    h1{
+                        font-size: 30px;
+                    }
+                }
+            }
+        }
+    }
+    .section1{
+        .container{
+            .shop{
+                flex-direction: column;
+                gap: 70px;
+                .animals{
+                    width: 450px;
+                }
+                .wood{
+                    width: 450px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:576px) {
+    nav{
+        .template{
+            .container{
+                .store{
+                    .call{
+                        #p2{
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:480px) {
+    .section1{
+        .container{
+            padding: 0 20px;
+            .shop{
+                flex-direction: column;
+                gap: 70px;
+                .animals{
+                    width: 100%;
+                    flex-direction: column;
+                    .image{
+                        width: 250px;
+                    }
+                    .now{
+                        align-items: center;
+                    }
+                }
+                .wood{
+                    width: 100%;
+                    flex-direction: column-reverse;
+                    .now{
+                        align-items: center;
+                    }
+                    .image{
+                        width: 250px;
+                    }
+                }
+            }
+        }
+    }
+    .section2{
+        .container{
+            .boxes{
+                flex-direction: column;
+                .dog{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .section3{
+        .container{
+            .toys{
+                flex-direction: column;
+                .dog{
+                    width: 100%;
+                }
+            }
         }
     }
 }
