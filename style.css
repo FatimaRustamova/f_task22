@@ -6,10 +6,12 @@
 
 nav {
   width: 100%;
+  position: fixed;
+  z-index: 1;
 }
 nav .template {
   width: 100%;
-  background-color: yellowgreen;
+  background-color: #a5c926;
 }
 nav .template .container {
   max-width: 1250px;
@@ -48,7 +50,7 @@ nav .template .container .store .twitter a {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
 }
 nav .template .container .store .twitter a i {
   font-size: 14px;
@@ -56,11 +58,12 @@ nav .template .container .store .twitter a i {
 }
 nav .template .container .store .twitter a:hover {
   border-radius: 70%;
+  background-color: rgba(0, 0, 0, 0.12);
 }
 nav .nav {
   width: 100%;
   padding: 20px 0;
-  position: relative;
+  background-color: white;
 }
 nav .nav .container {
   max-width: 1250px;
@@ -116,8 +119,8 @@ nav .nav .container .navbar .cart .basket p {
   font-size: 16px;
   color: rgb(85, 85, 85);
 }
-nav .nav .container .navbar .cart .basket img {
-  width: 30px;
+nav .nav .container .navbar .cart .basket i {
+  font-size: 20px;
 }
 nav .nav .container .navbar .cart .basket .zero {
   width: 20px;
@@ -126,7 +129,7 @@ nav .nav .container .navbar .cart .basket .zero {
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  background-color: yellowgreen;
+  background-color: #a5c926;
   color: white;
   font-size: 14px;
 }
@@ -138,6 +141,36 @@ nav .nav .container .navbar .cart .nav_icon i {
   padding: 0 10px 0 20px;
   display: none;
   font-size: 22px;
+  cursor: pointer;
+}
+nav .list {
+  width: 100%;
+  background-color: white;
+}
+nav .list ul {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+nav .list ul li {
+  list-style-type: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  margin-left: 20px;
+}
+nav .list ul li a {
+  text-decoration: none;
+  color: rgb(85, 85, 85);
+}
+nav .list hr {
+  width: 100%;
+  height: 1px;
+  background-color: grey;
+}
+
+.none {
+  display: none;
 }
 
 header {
@@ -172,7 +205,7 @@ header .container .free .hello {
 }
 header .container .free .hello p {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: yellowgreen;
+  color: #a5c926;
 }
 header .container .free .hello h1 {
   font-family: "Varela Round", sans-serif;
@@ -184,8 +217,8 @@ header .container .free .hello h1 {
 header .container .free .hello button {
   width: 150px;
   height: 50px;
-  background-color: yellowgreen;
-  border: 1px solid yellowgreen;
+  background-color: #a5c926;
+  border: 1px solid #a5c926;
   color: white;
   border-radius: 25px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -230,6 +263,7 @@ header .mouse i {
   display: none;
   justify-content: center;
   align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 .click .modal {
   width: 480px;
@@ -410,7 +444,7 @@ header .mouse i {
   font-size: 18px;
 }
 .section2 .container .stuff a:hover {
-  border-bottom: 2px solid yellowgreen;
+  border-bottom: 2px solid #a5c926;
 }
 .section2 .container .hr {
   width: 100%;
@@ -421,7 +455,7 @@ header .mouse i {
 .section2 .container .hr .color {
   width: 15%;
   height: 100%;
-  background-color: yellowgreen;
+  background-color: #a5c926;
 }
 .section2 .container .boxes {
   display: flex;
@@ -455,7 +489,7 @@ header .mouse i {
 .section2 .container .boxes .dog .usd {
   width: 100px;
   height: 25px;
-  background-color: yellowgreen;
+  background-color: #a5c926;
   border-radius: 25px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 12px;
@@ -465,7 +499,7 @@ header .mouse i {
   align-items: center;
 }
 .section2 .container .boxes .dog:hover {
-  scale: 1.1;
+  scale: 1.05;
   cursor: pointer;
   box-shadow: 0px 0px 15px 0px rgba(123, 126, 126, 0.75);
   -webkit-box-shadow: 0px 0px 15px 0px rgba(123, 126, 126, 0.75);
@@ -474,7 +508,7 @@ header .mouse i {
 
 .section3 {
   width: 100%;
-  padding: 70px 0;
+  padding: 70px 0 120px 0;
   background-color: aliceblue;
 }
 .section3 .container {
@@ -506,7 +540,7 @@ header .mouse i {
   font-size: 18px;
 }
 .section3 .container .wooden a:hover {
-  border-bottom: 2px solid yellowgreen;
+  border-bottom: 2px solid #a5c926;
 }
 .section3 .container .hr {
   width: 100%;
@@ -517,7 +551,7 @@ header .mouse i {
 .section3 .container .hr .color {
   width: 15%;
   height: 100%;
-  background-color: yellowgreen;
+  background-color: #a5c926;
 }
 .section3 .container .toys {
   display: flex;
@@ -551,7 +585,7 @@ header .mouse i {
 .section3 .container .toys .dog .usd {
   width: 100px;
   height: 25px;
-  background-color: yellowgreen;
+  background-color: #a5c926;
   border-radius: 25px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 12px;
@@ -561,11 +595,440 @@ header .mouse i {
   align-items: center;
 }
 .section3 .container .toys .dog:hover {
-  scale: 1.1;
+  scale: 1.05;
   cursor: pointer;
   box-shadow: 0px 0px 15px 0px rgba(123, 126, 126, 0.75);
   -webkit-box-shadow: 0px 0px 15px 0px rgba(123, 126, 126, 0.75);
   -moz-box-shadow: 0px 0px 15px 0px rgba(123, 126, 126, 0.75);
+}
+
+.section4 {
+  width: 100%;
+  padding: 100px 0;
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("https://assets.website-files.com/5badda2935e11303a89a461e/5baf3d57ace69c149bb331b8_tim-gouw-165547-unsplash.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+.section4 .container {
+  max-width: 1250px;
+  width: 100%;
+  padding: 0 32px;
+  margin: auto;
+}
+.section4 .container .story {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.section4 .container .story .watch {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+}
+.section4 .container .story .watch p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+}
+.section4 .container .story .watch h2 {
+  font-family: "Varela Round", sans-serif;
+  color: white;
+  font-size: 35px;
+}
+.section4 .container .story .watch button {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  border: 1px solid #a5c926;
+  background-color: #a5c926;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.section4 .container .story .watch button i {
+  font-size: 25px;
+  color: white;
+}
+.section4 .container .story .watch button:hover {
+  scale: 1.05;
+  cursor: pointer;
+  box-shadow: 0px 0px 3px 0px rgba(87, 89, 90, 0.75);
+  -webkit-box-shadow: 0px 0px 3px 0px rgba(87, 89, 90, 0.75);
+  -moz-box-shadow: 0px 0px 3px 0px rgba(87, 89, 90, 0.75);
+}
+
+.section5 {
+  width: 100%;
+  padding: 100px 0;
+  background-color: aliceblue;
+}
+.section5 .container {
+  max-width: 1250px;
+  width: 100%;
+  padding: 0 32px;
+  margin: auto;
+}
+.section5 .container .web {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+.section5 .container .web .simple {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.section5 .container .web .simple p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #a5c926;
+  font-size: 15px;
+}
+.section5 .container .web .simple h2 {
+  font-family: "Varela Round", sans-serif;
+  color: rgb(50, 46, 46);
+  font-size: 30px;
+  text-align: center;
+}
+.section5 .container .available {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+}
+.section5 .container .available .left {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.section5 .container .available .left h2 {
+  font-family: "Varela Round", sans-serif;
+  font-size: 30px;
+}
+.section5 .container .available .left .green {
+  width: 80px;
+  height: 2px;
+  background-color: #a5c926;
+}
+.section5 .container .available .left p {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 17px;
+  color: grey;
+  line-height: 25px;
+}
+.section5 .container .available .left button {
+  width: 150px;
+  height: 50px;
+  background-color: #a5c926;
+  color: white;
+  border: 1px solid #a5c926;
+  border-radius: 25px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+.section5 .container .available .left button:hover {
+  scale: 1.05;
+  cursor: pointer;
+  box-shadow: 0px 0px 3px 0px rgba(87, 89, 90, 0.75);
+  -webkit-box-shadow: 0px 0px 3px 0px rgba(87, 89, 90, 0.75);
+  -moz-box-shadow: 0px 0px 3px 0px rgba(87, 89, 90, 0.75);
+}
+.section5 .container .available .right {
+  width: 47%;
+}
+.section5 .container .available .right img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.section6 {
+  width: 100%;
+  padding: 40px 0;
+  background-color: aliceblue;
+}
+.section6 .container {
+  max-width: 1250px;
+  width: 100%;
+  padding: 0 32px;
+  margin: auto;
+}
+.section6 .container .percent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section6 .container .percent .subscribe {
+  width: 100%;
+  padding: 50px 0;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 0px 1px 0px rgba(87, 89, 90, 0.75);
+  -webkit-box-shadow: 0px 0px 1px 0px rgba(87, 89, 90, 0.75);
+  -moz-box-shadow: 0px 0px 1px 0px rgba(87, 89, 90, 0.75);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.section6 .container .percent .subscribe .discount {
+  width: 45%;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.section6 .container .percent .subscribe .discount .paperplane {
+  width: 65px;
+  height: 65px;
+  background-color: #a5c926;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section6 .container .percent .subscribe .discount .paperplane img {
+  width: 30px;
+}
+.section6 .container .percent .subscribe .discount h3 {
+  font-family: "Varela Round", sans-serif;
+  color: rgb(50, 46, 46);
+  font-size: 25px;
+  line-height: 32px;
+}
+.section6 .container .percent .subscribe .discount h3 span {
+  color: #a5c926;
+}
+.section6 .container .percent .subscribe .email {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.section6 .container .percent .subscribe .email input {
+  width: 65%;
+  height: 50px;
+  border-radius: 25px;
+  border: 1px solid grey;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding-left: 30px;
+  font-size: 17px;
+  background-color: aliceblue;
+  transition: all 0.3s ease;
+}
+.section6 .container .percent .subscribe .email input:hover {
+  background-color: white;
+}
+.section6 .container .percent .subscribe .email button {
+  width: 25%;
+  height: 50px;
+  background-color: #a5c926;
+  color: white;
+  border: 1px solid #a5c926;
+  border-radius: 25px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 17px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+.section6 .container .percent .subscribe .email button:hover {
+  scale: 1.05;
+  cursor: pointer;
+  box-shadow: 0px 0px 3px 0px rgba(87, 89, 90, 0.75);
+  -webkit-box-shadow: 0px 0px 3px 0px rgba(87, 89, 90, 0.75);
+  -moz-box-shadow: 0px 0px 3px 0px rgba(87, 89, 90, 0.75);
+}
+
+.section7 {
+  width: 100%;
+  padding: 70px 0;
+  background-color: aliceblue;
+}
+.section7 .container {
+  max-width: 1250px;
+  width: 100%;
+  padding: 0 32px;
+  margin: auto;
+}
+.section7 .container .instagram {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+}
+.section7 .container .instagram .elastic {
+  width: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+.section7 .container .instagram .elastic p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #a5c926;
+  font-size: 15px;
+}
+.section7 .container .instagram .elastic h2 {
+  font-family: "Varela Round", sans-serif;
+  color: rgb(50, 46, 46);
+  font-size: 30px;
+  text-align: center;
+}
+.section7 .container .wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+}
+.section7 .container .wrap .img {
+  width: 15%;
+}
+.section7 .container .wrap .img img {
+  width: 100%;
+  border-radius: 15px;
+}
+.section7 .container .center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+.section7 .container .center button {
+  width: 170px;
+  height: 50px;
+  background-color: #a5c926;
+  color: white;
+  border: 1px solid #a5c926;
+  border-radius: 25px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 18px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+.section7 .container .center button:hover {
+  scale: 1.05;
+  cursor: pointer;
+  box-shadow: 0px 0px 3px 0px rgba(87, 89, 90, 0.75);
+  -webkit-box-shadow: 0px 0px 3px 0px rgba(87, 89, 90, 0.75);
+  -moz-box-shadow: 0px 0px 3px 0px rgba(87, 89, 90, 0.75);
+}
+
+footer {
+  width: 100%;
+  background-color: #a5c926;
+}
+footer .container {
+  max-width: 1250px;
+  width: 100%;
+  padding: 0 32px;
+  margin: auto;
+}
+footer .container .foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+}
+footer .container .foot .home {
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .container .foot .home h3 {
+  font-family: "Varela Round", sans-serif;
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+}
+footer .container .foot .home ul {
+  display: flex;
+  gap: 30px;
+}
+footer .container .foot .home ul li {
+  list-style-type: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+}
+footer .container .foot .home ul li a {
+  text-decoration: none;
+  color: white;
+}
+footer .container .foot .home ul li:hover {
+  border-bottom: 1px solid white;
+}
+footer .container .foot .facebook {
+  width: 25%;
+  display: flex;
+  justify-content: flex-end;
+}
+footer .container .foot .facebook a {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease;
+}
+footer .container .foot .facebook a i {
+  font-size: 16px;
+  color: white;
+}
+footer .container .foot .facebook a:hover {
+  border-radius: 70%;
+  background-color: rgba(0, 0, 0, 0.12);
+}
+footer .container hr {
+  width: 100%;
+  height: 1px;
+  background-color: white;
+}
+footer .container .create {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+}
+footer .container .create p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 14px;
+  color: white;
+}
+footer .container .create p a {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 14px;
+  color: white;
+}
+footer .container .create .power {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+footer .container .create .power p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 14px;
+  color: white;
+}
+footer .container .create .power a {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 14px;
+  color: white;
+}
+footer .container .create .power .circle {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: white;
 }
 
 @media screen and (max-width: 990px) {
@@ -615,6 +1078,71 @@ header .mouse i {
   .section3 .container .toys .dog {
     width: 46%;
   }
+  .section4 .container .story .watch {
+    width: 95%;
+  }
+  .section5 .container .web .simple {
+    width: 60%;
+  }
+  .section5 .container .available {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+  .section5 .container .available .left {
+    width: 90%;
+    align-items: center;
+  }
+  .section5 .container .available .left p {
+    text-align: center;
+  }
+  .section5 .container .available .right {
+    width: 90%;
+  }
+  .section6 .container .percent .subscribe {
+    flex-direction: column;
+    width: 70%;
+    gap: 50px;
+  }
+  .section6 .container .percent .subscribe .discount {
+    width: 100%;
+    flex-direction: column;
+  }
+  .section6 .container .percent .subscribe .discount h3 {
+    text-align: center;
+  }
+  .section6 .container .percent .subscribe .email {
+    width: 100%;
+    flex-direction: column;
+  }
+  .section6 .container .percent .subscribe .email input {
+    width: 70%;
+  }
+  .section6 .container .percent .subscribe .email button {
+    width: 70%;
+  }
+  .section7 .container {
+    padding: 0 100px;
+  }
+  .section7 .container .instagram .elastic {
+    width: 100%;
+  }
+  .section7 .container .wrap {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .section7 .container .wrap .img {
+    width: 30%;
+  }
+  footer .container .foot {
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+  footer .container .foot .home {
+    width: 100%;
+  }
+  footer .container .foot .facebook {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 768px) {
   header .container .free .hello {
@@ -634,10 +1162,34 @@ header .mouse i {
   .section1 .container .shop .wood {
     width: 450px;
   }
+  .section5 .container .web .simple {
+    width: 70%;
+  }
+  .section6 .container .percent .subscribe {
+    width: 85%;
+  }
+  .section7 .container {
+    padding: 0 32px;
+  }
 }
 @media screen and (max-width: 576px) {
   nav .template .container .store .call #p2 {
     display: none;
+  }
+  .section7 .container .wrap {
+    gap: 30px;
+  }
+  .section7 .container .wrap .img {
+    width: 45%;
+  }
+  footer .container .foot .home h3 {
+    font-size: 20px;
+  }
+  footer .container .foot .home ul {
+    gap: 20px;
+  }
+  footer .container .foot .home ul li a {
+    font-size: 12px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -679,5 +1231,29 @@ header .mouse i {
   }
   .section3 .container .toys .dog {
     width: 100%;
+  }
+  .section5 .container .web .simple {
+    width: 95%;
+  }
+  .section6 .container {
+    padding: 0 25px;
+  }
+  .section6 .container .percent .subscribe {
+    width: 100%;
+  }
+  .section6 .container .percent .subscribe .email input {
+    width: 85%;
+  }
+  .section6 .container .percent .subscribe .email button {
+    width: 85%;
+  }
+  footer .container .foot .home h3 {
+    font-size: 18px;
+  }
+  footer .container .foot .home ul {
+    gap: 15px;
+  }
+  footer .container .foot .home ul li a {
+    font-size: 10px;
   }
 }/*# sourceMappingURL=style.css.map */

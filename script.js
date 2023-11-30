@@ -8,25 +8,37 @@ let shop = document.querySelector(".shop");
 let template = document.querySelector(".template");
 let nav = document.querySelector(".nav");
 let nav_icon = document.querySelector(".nav_icon");
-let list = document.querySelector(".list")
+let list = document.querySelector(".list");
+// let button =  document.querySelector("#button");
+// let video = document.querySelector(".video");
+// let x_icon = document.querySelector(".x_icon");
+let a = document.querySelectorAll("#a");
+
 
 ///---1---///
-// window.addEventListener("scroll", ()=>{
-//     if(window.scrollY > 35){
-//         template.style.display = "none";
-//         nav.style.position = "fixed";
-//         nav.style.top = "0";
-//         nav.style.left = "0"
-//         nav.style.backgroundColor = "black";
-//         nav.style.color = "white";
-//     }
-//     else{
-//         template.style.display = "";
-//         nav.style.position = "";
-//         nav.style.backgroundColor = "";
-//         nav.style.color = "";
-//     }
-// })
+window.addEventListener("scroll", ()=>{
+    if(window.scrollY > 100){
+        template.style.display = "none";
+        nav.style.top = "0";
+        nav.style.left = "0"
+        nav.style.backgroundColor = "black";
+        a.forEach(item=>{
+            item.style.color = "white";
+        })
+        nav.style.transition = "all .5s ease";
+        nav.style.padding = "10px 0";
+    }
+    else{
+        template.style.display = "";
+        nav.style.position = "";
+        nav.style.backgroundColor = "";
+        a.forEach(item=>{
+            item.style.color = "";
+        })
+        nav.style.transition = "all .5s ease";
+        nav.style.padding = "";
+    }
+})
 
 
 ///---2---///
@@ -37,8 +49,14 @@ mouse.addEventListener("click", (e)=>{
 
 
 ///---3---///
-// nav_icon.addEventListener("click", ()=>{
-//     list.style.display = "block"
+nav_icon.addEventListener("click", ()=>{
+    list.classList.toggle("none");
+})
+
+// body.addEventListener("click", (e)=>{
+//     if(e.target !== list){
+//         list.classList.add("none");
+//     }
 // })
 
 
@@ -123,3 +141,26 @@ document.addEventListener("keydown", (i)=>{
         click.style.display = "none";
     }
 })
+
+
+///---Video---///
+// button.addEventListener("click", ()=>{
+//     video.style.display = "flex";
+//     nav.style.position = "static";
+// })
+
+// x_icon.addEventListener("click", ()=>{
+//     video.style.display = "none";
+// })
+
+// video.addEventListener("click", (e)=>{
+//     if(e.target == video){
+//         video.style.display = "none";
+//     }
+// })
+
+// document.addEventListener("keydown", (i)=>{
+//     if(i.key == "Escape"){
+//         video.style.display = "none";
+//     }
+// })
